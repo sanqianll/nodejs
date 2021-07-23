@@ -1,0 +1,1 @@
+"use strict";var a=0,b=2,c=function(c,o){console.log("一个箭头函数")};
