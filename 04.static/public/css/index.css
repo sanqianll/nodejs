@@ -1,0 +1,483 @@
+.main {
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+
+.main .focus {
+    position: relative;
+    float: left;
+    width: 721px;
+    height: 455px;
+    overflow: hidden;
+}
+
+.main .newsflash {
+    width: 250px;
+    height: 455px;
+}
+
+/* 轮播标签 */
+.main .focus ul {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 600%;
+}
+
+.main .focus ul li {
+    float: left;
+}
+
+.main .focus .prov,
+.main .focus .next {
+    display: none;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    margin-top: -20px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-family: "icomoon";
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.main .focus .prov {
+    left: 0px;
+    border-radius: 0 50% 50% 0;
+}
+
+.main .focus .prov:hover {
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.main .focus .next {
+    right: 0px;
+    border-radius: 50% 0 0 50%;
+}
+
+.main .focus .next:hover {
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.main .focus .promo_nav {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -50px;
+    /* width: 98px; */
+    height: 13px;
+    line-height: 13px;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, .7);
+}
+
+.promo_nav ul li {
+    float: left;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin: 3px;
+}
+
+.promo_nav ul li a {
+    float: left;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin: 3px;
+}
+
+.promo_nav .current {
+    background-color: #e60012;
+}
+
+.promo_nav ul li:hover {
+    background-color: #e60012;
+}
+
+.promo_nav ul li a:hover {
+    background-color: #e60012;
+}
+
+/* 新闻快报模块*/
+.main .news {
+    width: 250px;
+    height: 165px;
+    border: 1px solid #e4e4e4;
+    margin-top: 1px;
+}
+
+.main .news .news-hd {
+    height: 33px;
+    line-height: 33px;
+    border-bottom: 1px dotted #e8e8e7;
+    padding: 0 15px;
+}
+
+.main .news .news-hd h5 {
+    float: left;
+    font-size: 14px;
+    color: #333333;
+}
+
+.main .news .news-hd a {
+    float: right;
+    font-size: 14px;
+    color: #333333;
+}
+
+.main .news .news-hd a::after {
+    content: "\e920";
+    font-family: "icomoon";
+    font-size: 14px;
+    color: #333333;
+}
+
+.main .news .news-bd {
+    padding: 5px 0 0 15px;
+}
+
+.main .news .news-bd ul li {
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.main .lifeservice {
+    width: 250px;
+    height: 209px;
+    border-left: 1px solid #e4e4e4;
+}
+
+.main .lifeservice ul li {
+    float: left;
+    width: 62px;
+    height: 70px;
+    text-align: center;
+    border-bottom: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+    padding-top: 12px;
+}
+
+.main .lifeservice ul li:nth-child(4n) {
+    width: 63px;
+}
+
+.main .lifeservice ul li:nth-child(n+9) {
+    height: 69px;
+}
+
+.main .lifeservice ul li i {
+    display: inline-block;
+    width: 25px;
+    height: 30px;
+    background: url(../images/icons.png);
+}
+
+.main .lifeservice ul li .icon_huafei {
+    background-position: -16px -15px;
+}
+
+.main .lifeservice ul li .icon_jipiao {
+    background-position: -79px -15px;
+}
+
+.main .lifeservice ul li .icon_dianyingpiao {
+    background-position: -140px -15px;
+}
+
+.main .lifeservice ul li .icon_youxi {
+    background-position: -204px -15px;
+}
+
+.main .lifeservice ul li .icon_caipiao {
+    background-position: -16px -88px;
+}
+
+.main .lifeservice ul li .icon_jiayouka {
+    background-position: -79px -88px;
+}
+
+.main .lifeservice ul li .icon_jiudian {
+    background-position: -140px -88px;
+}
+
+.main .lifeservice ul li .icon_huochepiao {
+    background-position: -205px -88px;
+}
+
+.main .lifeservice ul li .icon_zhongchou {
+    background-position: -16px -159px;
+}
+
+.main .lifeservice ul li .icon_licai {
+    background-position: -79px -159px;
+}
+
+.main .lifeservice ul li .icon_lipinka {
+    background-position: -140px -159px;
+}
+
+.main .lifeservice ul li .icon_baitiao {
+    background-position: -204px -159px;
+}
+
+.lifeservice .por {
+    position: relative;
+}
+
+/* 减价标签的第一种写法 */
+.lifeservice .jianjia {
+    width: 12px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(../images/down.png);
+}
+
+/* 减价标签的第二中方法 */
+.lifeservice .jianjia2::before {
+    position: absolute;
+    content: "减";
+    top: 0;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    font-size: 10px;
+    line-height: 10px;
+    color: white;
+    background-color: #589d5a;
+}
+
+.lifeservice .jianjia2::after {
+    position: absolute;
+    content: "";
+    top: 12px;
+    right: 0px;
+    border-top: none;
+    border-left: 6px solid #589d5a;
+    border-right: 6px solid #589d5a;
+    border-bottom: 3px solid white;
+}
+
+.main .bargain {
+    width: 250px;
+    height: 75px;
+    padding-top: 5px;
+}
+
+/* 推荐模块 */
+.recom {
+    height: 163px;
+    background-color: #ebebeb;
+    margin-top: 11px;
+}
+
+.recom .recom_hd {
+    float: left;
+    display: block;
+    width: 206px;
+    height: 163px;
+    background: #5c5251 url(../images/recom.png) center center no-repeat;
+}
+
+.recom .recom_bd {
+    float: left;
+    height: 163px;
+}
+
+.recom .recom_bd ul li {
+    position: relative;
+    float: left;
+    width: 248px;
+    height: 163px;
+
+}
+
+.recom .recom_bd ul li:nth-child(-n+3)::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 1px;
+    height: 145px;
+    background-color: #ddd;
+}
+
+.recom_bd ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 猜你喜欢模块 */
+.guess {
+    height: 292px;
+    padding-top: 23px;
+}
+
+.guess .guess_bd {
+    height: 59px;
+}
+
+.guess .guess_hd h3 {
+    float: left;
+    height: 36px;
+    font-size: 18px;
+    line-height: 18px;
+    color: #333333;
+}
+
+.guess .guess_hd a {
+    float: right;
+    font-size: 12px;
+    color: #666666;
+    margin-right: 20px;
+    font-family: "icomoon";
+}
+
+.guess .guess_bd {
+    height: 233px;
+    border: 1px solid #ededed;
+}
+
+.guess .guess_bd ul li {
+    position: relative;
+    float: left;
+    width: 199px;
+    height: 231px;
+}
+
+.guess .guess_bd ul li:nth-child(-n+5):after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 62px;
+    right: 0px;
+    bottom: 8px;
+    background-color: #ededed;
+}
+
+.guess .guess_bd ul li div {
+    width: 199px;
+    height: 163pxpx;
+    text-align: center;
+    line-height: 163px;
+}
+
+.guess .guess_bd ul li p {
+    margin-left: 30px;
+}
+
+.guess .guess_bd ul li i {
+    margin-left: 30px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #df3033;
+}
+
+/* 家用电器模块 */
+.floor .box-hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+    margin-top: 30px;
+}
+
+
+.box-hd h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #c81623;
+}
+
+.box-hd .tab_list ul li {
+    line-height: 30px;
+    float: left;
+}
+
+.box-hd .tab_list ul li a {
+    margin: 0 15px;
+}
+
+.box-bd {
+    height: 361px;
+}
+
+.tab_list_item>div {
+    float: left;
+}
+
+.tab_list_item .col_210 {
+    width: 210px;
+    height: 361px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.tab_list_item .col_210 ul {
+    padding-left: 12px;
+}
+
+.tab_list_item .col_210 ul li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    line-height: 34px;
+    border-bottom: 1px solid #ededed;
+    margin-right: 10px;
+}
+
+.tab_list_item .col_329 {
+    width: 329px;
+    height: 361px;
+}
+
+.tab_list_item .col_221 {
+    width: 221px;
+    height: 361px;
+    border-right: 1px solid #ededed;
+}
+
+.tab_list_item .col_219 {
+    width: 219px;
+    height: 361px;
+}
+
+.bb {
+    display: block;
+    border-bottom: 1px solid #ededed;
+}
+
+/* 固定电梯导航 */
+.fixedtool{
+    display: none;
+    position: fixed;
+    top: 300px;
+    left: 200px;
+    width: 70px;
+}
+.fixedtool ul li{
+    width: 70px;
+    height: 50px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.fixedtool .current{
+    background-color: tomato;
+    color: white;
+}
